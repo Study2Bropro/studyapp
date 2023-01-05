@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_05_055556) do
+ActiveRecord::Schema.define(version: 2023_01_05_084220) do
 
   create_table "notifications", force: :cascade do |t|
     t.integer "study_id"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2023_01_05_055556) do
     t.boolean "action", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "date"
   end
 
   create_table "users", force: :cascade do |t|
