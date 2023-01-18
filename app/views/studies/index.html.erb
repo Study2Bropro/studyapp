@@ -23,6 +23,10 @@
 
 <% end %>
 
+<%= month_calendar do |date| %>
+  <%= date.day %>
+<% end %>
+
 
 
 <%= form_with model: @study do |f| %>
