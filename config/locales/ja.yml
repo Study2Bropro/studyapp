@@ -1,0 +1,31 @@
+ja:
+  time:
+    formats:
+      default: "%H:%M:%S"
+  date:
+    formats:
+      default: "%Y/%m/%d"
+  activerecord:
+    errors:
+      models:
+        study:
+          attributes:
+            title:
+              too_short: "を1文字以上にしてください"
+              too_long: "を20文字以内にしてください"
+            content:
+              too_short: "を1文字以上にしてください"
+              too_long: "を100文字以内にしてください"
+            date:
+              blank: "を入力してください"
+            start_time:
+              blank: "を入力してください"
+            end_time:
+              blank: "を入力してください"
+    attributes:
+      study:
+        title: "タイトル"
+        content: "学習内容"
+        date: "日程"
+        start_time: "勉強開始時間"
+        end_time: "勉強終了時間"

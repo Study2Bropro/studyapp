@@ -15,8 +15,12 @@ class StudiesController < ApplicationController
 
   def create
     @study = Study.new(study_params)
-    @study.save
-    redirect_to studies_path
+    if @study.save
+      redirect_to studies_path
+    else 
+      @studies = Study.all
+      render "index"
+    end
   end
 
   def destroy
@@ -27,8 +31,11 @@ class StudiesController < ApplicationController
 
   def update
     @study = Study.find(params[:id])
-    @study.update(study_params)
-    redirect_to studies_path
+    if @study.update(study_params)
+      redirect_to studies_path
+    else 
+      render "edit"
+    end
   end
 
   private
