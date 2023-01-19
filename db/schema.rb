@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_05_084220) do
+ActiveRecord::Schema.define(version: 2023_01_19_091929) do
 
   create_table "notifications", force: :cascade do |t|
     t.integer "study_id"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2023_01_05_084220) do
     t.string "content", null: false
     t.time "study_time"
     t.boolean "status", default: false, null: false
-    t.time "start_time"
+    t.datetime "start_time"
     t.time "end_time"
     t.boolean "action", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
