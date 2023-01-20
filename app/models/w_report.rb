@@ -1,0 +1,2 @@
+class WReport < ApplicationRecord
+end

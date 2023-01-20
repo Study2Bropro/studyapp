@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      <h4>デイリーレポート一覧</h4>
+    </div>
+      <div class="card-body">
+        <div class="row">
+          <% @d_reports.each do |d_report| %>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+              <div class="card">
+                <div class="card-header">
+                </div>
+                  <div class="card-body">
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>タイトル</strong><%= d_report.title %></li>
+                    <li class="list-group-item"><strong>勉強内容</strong><%= d_report.content %></li>
+                    <li class="list-group-item"><%= link_to '詳細', d_report_path(d_report.id), class:"btn btn-primary" %></li>
+                  </ul>
+                </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
