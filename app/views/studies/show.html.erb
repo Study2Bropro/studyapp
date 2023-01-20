@@ -5,14 +5,24 @@
 <p>内容</p>
 <%= @study.content %>
 
-<p>日程</p>
-<%= l @study.date %>
-
 <p>勉強開始時間</p>
 <%= l @study.start_time %>
 
-<p>勉強終了時間</p>
-<%= l @study.end_time %>
-
 <%= link_to "編集", edit_study_path(@study.id), class: "btn btn-sm btn-success edit_study_#{@study.id}" %>
 <%= link_to "削除", study_path(@study.id), method: :delete, class: "btn btn-sm btn-danger destroy_study_#{@study.id}" %>
+
+<h1>StopWatch</h1>
+<div class="stopwatch_wrapper">
+  <div class="display">
+    <span id="hours" class="time">00</span>
+    <span id="minutes" class="time">00</span>
+    <span id="seconds" class="time">00</span>
+    <span id="milli_seconds" class="time">000</span>
+  </div>
+  <div class="buttons">
+    <button class="button" id="start">start</button>
+    <button class="button" id="stop" disabled>stop</button>
+    <button class="button" id="reset" disabled>reset</button>
+  </div>
+</div>
+<script src="script.js"></script>
