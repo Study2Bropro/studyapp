@@ -10,16 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_19_084715) do
-
-  create_table "d_reports", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "title", null: false
-    t.string "content", null: false
-    t.date "date", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
 
   create_table "notifications", force: :cascade do |t|
     t.integer "study_id"
@@ -43,12 +33,10 @@ ActiveRecord::Schema.define(version: 2023_01_19_084715) do
     t.string "content", null: false
     t.time "study_time"
     t.boolean "status", default: false, null: false
-    t.time "start_time"
-    t.time "end_time"
+    t.datetime "start_time"
     t.boolean "action", default: false, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.date "date"
   end
 
   create_table "users", force: :cascade do |t|

@@ -41,7 +41,7 @@ class StudiesController < ApplicationController
   private
 
   def study_params
-    params.require(:study).permit(:title,:content,:date,:start_time,:end_time)
+    params.require(:study).permit(:title,:content,:start_time)
   end
 
 end
