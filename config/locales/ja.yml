@@ -4,16 +4,16 @@ ja:
     next: ">>"
   time:
     formats:
-      default: "%H:%M:%S"
+      default: "%Y/%m/%d %H:%M:%S"
   date:
     abbr_day_names:
-    - Sun.
-    - Mon.
-    - Tue.
-    - Wed.
-    - Thu.
-    - Fri.
-    - Sat.
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
     abbr_month_names:
     - 
     - 1月
@@ -40,18 +40,18 @@ ja:
       default: "%Y/%m/%d"
     month_names:
     - 
-    - Jan.
-    - Feb.
-    - Mar.
-    - Apr.
-    - May
-    - Jun.
-    - Jul.
-    - Aug.
-    - Sep.
-    - Oct.
-    - Nov.
-    - Dec.
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
     order:
     - :year
     - :month
